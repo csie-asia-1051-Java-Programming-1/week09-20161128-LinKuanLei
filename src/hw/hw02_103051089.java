@@ -11,7 +11,19 @@ public class hw02_103051089 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int temp = 1;
+		for(int i = 0;temp<=num;i++){
+			temp+=i;
+			System.out.print(temp+"\t");
+		}
+		System.out.println();
+		for(int i = 1;i<=num;i++){
+			for(int j = 0;j<i;j++){
+				System.out.print(i+"\t");
+			}
+		}
 	}
 
 }
