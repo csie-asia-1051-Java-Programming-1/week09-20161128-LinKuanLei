@@ -9,8 +9,31 @@ import java.util.Scanner;
 public class hw01_103051089 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+		// TODO Auto-generated method stub 	
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int temp = 0;
+		boolean  sw=true;
+		for(int i =1;i<=num;i++){
+			temp=0;
+			for(int j = i;j<=num;j++){
+				temp+=j;
+				if(temp==num && j!=num){
+					sw=false;
+					System.out.print("=");
+					for(int k = i;k<=j;k++){
+						System.out.print(k);
+						if(k<j){
+							System.out.print("+");
+						}
+					}
+					System.out.println();
+				}
+			}
+		}
+		if(sw==true){
+			System.out.println("No");
+		}
+        }
 
 }
