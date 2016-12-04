@@ -4,7 +4,7 @@
  * Date: 2016/11/28
  * Author: 103051089 林冠磊
  */
-
+import java.util.Scanner;
 public class ex03_103051089 {
 
 	public static void main(String[] args) {
